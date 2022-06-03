@@ -103,7 +103,7 @@
 
 \pagenumbering{Roman}
 
-\tableofcontents[level=2]
+\tableofcontents[level=3]
 
 \clearpage
 
@@ -221,8 +221,6 @@ ListTraverse(L,visit()),
 
 ----操作结果:依次对L的每个数据元素调用函数visit()。
 
-\\
-
 附加功能:
 
 (1)最大连续子数组和:
@@ -301,49 +299,152 @@ typedef struct
 
 演示系统语言为英文且所有操作和提示语言均为英文。
 
-用户操作界面输出可选的线性表操作，用户输入数字选择要进行的操作。系统提示用户输入参数。
+用户操作界面输出可选的线性表操作,用户输入数字选择要进行的操作。系统提示用户输入参数。
 
-功能调用部分则将用户输入的有关信息传递给线性数据结构的操作函数进行调用，并对函数返回值进行处理判断输出相应提示信息。
+功能调用部分则将用户输入的有关信息传递给线性数据结构的操作函数进行调用,并对函数返回值进行处理判断输出相应提示信息。
 
-\subsubsection{算法实现}
+\subsubsection{线性表运算算法实现}
 
-1.status InitList(SqList &L);
+1.status InitList(SqList \&L);
 
-2.status PrepareList(SqList &L);
+\textbf{功能: }初始化线性表。
 
-3.status DestroyList(SqList &L);
+\textbf{算法实现: }为线性表L的data申请空间,申请失败返回ERROR,否则返回成功。
 
-4.status ClearList(SqList &L);
+\textbf{时空效率: }时间复杂度为O(1),空间复杂度为O(1)。\\
 
-5.status ListEmpty(SqList L);
+2.status DestroyList(SqList \&L);
 
-6.status ListLength(SqList L);
+\textbf{功能: }销毁线性表。
 
-7.status GetElem(SqList L, int i, ElemType &e);
+\textbf{算法实现: }如果线性表L存在,free掉data空间并设置为null,将其他字段设置为0,返回OK,否则返回INFEASIBLE。
 
-8.status LocateElem(SqList L, ElemType e); //简化过
+\textbf{时空效率: }时间复杂度为O(1),空间复杂度为O(1)。\\
 
-9.status PriorElem(SqList L, ElemType i, ElemType &pre_e);
+3.status ClearList(SqList \&L);
 
-10.status NextElem(SqList L, ElemType i, ElemType &next_e);
+\textbf{功能: }清空线性表。
 
-11.status ListInsert(SqList &L, int i, ElemType e);
+\textbf{算法实现: }如果线性表L存在,将data区域占有的内存空间释放并分配新内存空间,返回OK,否则返回INFEASIBLE。
 
-12.status ListDelete(SqList &L, int i, ElemType &e);
+\textbf{时空效率: }时间复杂度为O(1),空间复杂度为O(1)。\\
 
-13.status ListTraverse(SqList L);
+4.status ListEmpty(SqList L);
+
+\textbf{功能: }线性表判空。
+
+\textbf{算法实现: }如果线性表L存在,判断L.length是否为0,空就返回TRUE,否则返回FALSE;如果线性表L不存在,返回INFEASIBLE。
+
+\textbf{时空效率: }时间复杂度为O(1),空间复杂度为O(1)。\\
+
+5.status ListLength(SqList L);
+
+\textbf{功能: }获得线性表长度。
+
+\textbf{算法实现: }如果线性表L存在,返回线性表L.length,否则返回INFEASIBLE。
+
+\textbf{时空效率: }时间复杂度为O(1),空间复杂度为O(1)。\\
+
+6.status GetElem(SqList L, int i, ElemType \&e);
+
+\textbf{功能: }获得线性表指定位置数据。
+
+\textbf{算法实现: }如果线性表L不存在,返回INFEASIBLE。如果i不在1与L.length之间,返回ERROR。若上述情况未出现就把L.elem[i-1]的值赋给e,返回ok。
+
+\textbf{时空效率: }时间复杂度为O(n),空间复杂度为O(1)。\\
+
+7.status LocateElem(SqList L, ElemType e); //简化过
+
+\textbf{功能: }寻找指定元素在线性表中位置。
+
+\textbf{算法实现: }如果线性表L存在,遍历线性表数据,若发现数据与e相等就返回index+1;如果e不存在,返回0;当线性表L不存在时,返回INFEASIBLE(即-1)。
+
+\textbf{时空效率: }时间复杂度为O(n),空间复杂度为O(1)。\\
+
+8.status PriorElem(SqList L, ElemType i, ElemType \&pre\_e);
+
+\textbf{功能: }获得指定元素之前的一个元素。
+
+\textbf{算法实现: }如果线性表L存在,遍历查找该元素,将元素前一个位置元素赋值给pre\_e,返回OK;如果没有前驱,返回ERROR;如果线性表L不存在,返回INFEASIBLE。
+
+\textbf{时空效率: }时间复杂度为O(n),空间复杂度为O(1)。\\
+
+9.status NextElem(SqList L, ElemType i, ElemType \&next\_e);
+
+\textbf{功能: }获得指定元素之后的一个元素。
+
+\textbf{算法实现: }如果线性表L存在,遍历查找该元素,将元素前一个位置元素赋值给next\_e,返回OK;如果没有后继,返回ERROR;如果线性表L不存在,返回INFEASIBLE。
+
+\textbf{时空效率: }时间复杂度为O(n),空间复杂度为O(1)。\\
+
+10.status ListInsert(SqList \&L, int i, ElemType e);
+
+\textbf{功能: }插入元素。
+
+\textbf{算法实现: }如果线性表L存在,判断线性表要插入位置是否在1和L.length之间,不是则返回ERROR,判断线性表L.length是否等于L.listsize,相同则空间已满,分配新内存空间;将制定位置后的元素全部后移一个位置,新位置插入在指定位置,返回OK;如果线性表L不存在,返回INFEASIBLE。
+
+\textbf{时空效率: }时间复杂度为O(n),空间复杂度为O(1)。\\
+
+11.status ListDelete(SqList \&L, int i, ElemType \&e);
+
+\textbf{功能: }删除元素。
+
+\textbf{算法实现: }如果线性表L存在,判断线性表要插入位置是否在1和L.length之间,不是则返回ERROR,把L.elem[i-1]的值赋给e,将之后的元素全部前移一个位置,返回OK;当删除位置不正确时,返回ERROR;如果线性表L不存在,返回INFEASIBLE。
+
+\textbf{时空效率: }时间复杂度为O(n),空间复杂度为O(1)。\\
+
+12.status ListTraverse(SqList L);
+
+\textbf{功能: }遍历并打印线性表。
+
+\textbf{算法实现: }如果线性表L存在,直接遍历并打印线性表的所有元素,返回OK;如果线性表L不存在,返回INFEASIBLE。
+
+\textbf{时空效率: }时间复杂度为O(n),空间复杂度为O(1)。\\
+
+\subsubsection{文件存储实现算法}
+
+1.status SaveList(SqList L, char FileName[]);
+
+\textbf{功能: }数据保存。
+
+\textbf{算法实现: }如果线性表L存在,打开文件,根据L.length的大小存入L.elem数据,关闭文件,返回OK;如果线性表L不存在,返回INFEASIBLE。
+
+\textbf{时空效率: }时间复杂度为O(n),空间复杂度为O(n)。\\
+
+2.status LoadList(SqList \&L, char FileName[]);
+
+\textbf{功能: }读取文件。
+
+\textbf{算法实现: }如果线性表L存在,初始化线性表，打开文件,读取数据直到所有数据已经被放入线性表中,根据读取数据的大小改变L.length的值,关闭文件,返回OK;如果线性表L不存在,返回INFEASIBLE。
+
+\textbf{时空效率: }时间复杂度为O(n),空间复杂度为O(n)。\\
+
+%todo：
 
 \subsection{系统测试}
 
-主要说明针对各个函数正常和异常的测试用例及测试结果画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。
+\subsubsection{实验环境}
 
-\begin{figure}[htb] % here top bottom
+实验环境为manjaro linux 5.15.41-1,编译器为gcc版本12.1.0,代码编写使用编辑器VsCode。
+
+文件说明：
+
+def.h:线性表库头文件
+
+function.h:线性表库实现
+
+main.c:演示系统实现
+
+\subsubsection{操作演示}
+
+\begin{figure}[htb]
 	\begin{center}
-		\includegraphics[scale=0.80]{images/1-1.pdf}
-		\caption{网页整体框架举例}
+		\includegraphics[scale=0.60]{images/1-1.png}
+		\caption{系统演示界面}
 		\label{fig1-1}
-	\end{center}
+		\end{center}
 \end{figure}
+
 
 \subsection{实验小结}
 
