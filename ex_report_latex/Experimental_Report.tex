@@ -259,49 +259,51 @@ sortList(L);
 
 \subsection{系统设计}
 
-\subsubsection{数据物理结构}
+\subsubsection{数据结构设计}
 
 1.线性表的存储数据结构
 
-结构体定义如下：
+结构体定义如下:
 
 \begin{lstlisting}
 typedef struct
 { //顺序表（顺序结构）的定义
-    ElemType *elem;
-    int length;
-    int listsize;
+  ElemType *elem;
+  int length;
+  int listsize;
 } SqList;
 \end{lstlisting}
 
 2.多线性表的存储数据结构
 
-结构体定义如下：
+结构体定义如下:
 
 \begin{lstlisting}
 typedef struct
 { //线性表的集合类型定义
-    struct
-    {
-        char name[30];
-        SqList L;
-    } elem[10];
-	int length;
+  struct
+  {
+    char name[30];
+    SqList L;
+  } elem[10];
+  int length;
 } LISTS;
 
 \end{lstlisting}
 
 在本程序中,数据原子类型被定义为整型int。
 
-\subsubsection{演示系统}
+\subsubsection{演示系统设计}
 
 包括用户操作界面和功能调用两个部分。
 
-演示系统语言为英文且所有操作和提示语言均为英文。
+演示系统语言为英文,所有操作和提示语言均为中文。
 
 用户操作界面输出可选的线性表操作,用户输入数字选择要进行的操作。系统提示用户输入参数。
 
 功能调用部分则将用户输入的有关信息传递给线性数据结构的操作函数进行调用,并对函数返回值进行处理判断输出相应提示信息。
+
+\subsection{系统实现}
 
 \subsubsection{线性表运算算法实现}
 
@@ -415,11 +417,35 @@ typedef struct
 
 \textbf{功能: }读取文件。
 
-\textbf{算法实现: }如果线性表L存在,初始化线性表，打开文件,读取数据直到所有数据已经被放入线性表中,根据读取数据的大小改变L.length的值,关闭文件,返回OK;如果线性表L不存在,返回INFEASIBLE。
+\textbf{算法实现: }如果线性表L存在,初始化线性表,打开文件,读取数据直到所有数据已经被放入线性表中,根据读取数据的大小改变L.length的值,关闭文件,返回OK;如果线性表L不存在,返回INFEASIBLE。
 
 \textbf{时空效率: }时间复杂度为O(n),空间复杂度为O(n)。\\
 
-%todo：
+\subsubsection{多线性表存储实现算法}
+
+1.status AddList(LISTS \&Lists, char ListName[]);
+
+\textbf{功能: }在多线性表集合里添加线性表。
+
+\textbf{算法实现: }检查过多线性表长度足够后,往多线性表里多申请一块空间给新的线性表,并把输入的ListName赋给新线性表的名字。
+
+\textbf{时空效率: }时间复杂度为O(1),空间复杂度为O(1)。\\
+
+2.status RemoveList(LISTS \&Lists, char ListName[]);
+
+\textbf{功能: }在多线性表集合里删除线性表。
+
+\textbf{算法实现: }遍历多线性表寻找线性表,寻找到后删除线性表并将后面的线性表向前移动一位。
+
+\textbf{时空效率: }时间复杂度为O(n),空间复杂度为O(1)。\\
+
+3.int LocateList(LISTS Lists, char ListName[]);
+
+\textbf{功能: }在多线性表集合里寻找名为ListName的线性表。
+
+\textbf{算法实现: }遍历多线性表寻找线性表,寻找到后返回线性表的逻辑序号。
+
+\textbf{时空效率: }时间复杂度为O(n),空间复杂度为O(1)。\\
 
 \subsection{系统测试}
 
@@ -427,7 +453,7 @@ typedef struct
 
 实验环境为manjaro linux 5.15.41-1,编译器为gcc版本12.1.0,代码编写使用编辑器VsCode。
 
-文件说明：
+文件说明:
 
 def.h:线性表库头文件
 
@@ -448,196 +474,338 @@ main.c:演示系统实现
 
 \subsection{实验小结}
 
-重点说明在实验中取得的实际经验,例如调试中碰到的典型错误等,不要写套话。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。
-
-\begin{figure}[htb]
-	\begin{center}
-		\includegraphics[scale=0.60]{images/1-2.png}
-		\caption{在visio里通过文件-打印,把visio图打印成pdf文件}
-		\label{fig1-2}
-		\end{center}
-\end{figure}
-
-画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。
-
-\begin{figure}[htb]
-	\begin{center}
-		\includegraphics[scale=0.50]{images/1-3.png}
-		\caption{用pdf阅览器的工具,对打印得到pdf图做适当的裁剪}
-		\label{fig1-3}
-	\end{center}
-\end{figure}
-
-其实吧,用Latex写公式也不是很难,请参照公式\ref{equ_loss}。画表格就更简单了,请看表\ref{table2}。
-
-\begin{eqnarray}\label{equ_loss}
-	\mathcal{L}_{id}=\sum_{j=1}^{c}1\{l_k=j\}\log\frac{\exp(f_j(\textbf{W},x_k))}{\sum\nolimits_{l=1}^{c}\exp(f_l(\textbf{W},x_k))}
-\end{eqnarray}
-
-画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。
-
-\begin{table}
-	\begin{center}
-		\setlength{\tabcolsep}{2.0mm}
-		\caption{Mean and standard deviation of estimation error (Euler angles) on Pandora. The best performance is in \textbf{bold}.}
-		\label{table2}
-		\begin{tabular}{c|ccccc}
-			\hline
-			Method    			        & Data               & Pitch         & Roll           & Yaw              & Accuracy\\
-			\hline
-			\hline			
-			\multirow{5}{*}{POSEidon}   & Depth              & 6.5 $\pm$ 6.6  & 5.4 $\pm$ 5.1  & 10.4 $\pm$ 11.8  & 0.646\\
-			& FfD              	 & 6.8 $\pm$ 7.0  & 5.7 $\pm$ 5.7  & 10.5 $\pm$ 14.6  & 0.647\\
-			& Gray-level         & 7.1 $\pm$ 6.6  & 5.6 $\pm$ 5.8  & 9.0  $\pm$ 10.9  & 0.639\\
-			& Depth + FfD	     & 5.6 $\pm$ 5.0  & 4.9 $\pm$ 5.0  & 9.8  $\pm$ 13.4  & 0.698\\
-			& Depth + FfD + MI   & 5.7 $\pm$ 5.6  & 4.9 $\pm$ 5.1  & 9.0  $\pm$ 11.9  & 0.715\\
-			\hline
-			DRF                         & Depth              & 6.2 $\pm$ 9.5  & 4.6 $\pm$ 6.7  & 9.3  $\pm$ 14.6  & --\\
-			\hline
-			\multirow{3}{*}{Ours}   	& Depth              & 5.9 $\pm$ 6.2  & 4.5 $\pm$ 4.9  & 8.8  $\pm$ 10.9  & 0.666\\
-			& RGB                & 5.5 $\pm$ 5.3  & 4.4 $\pm$ 5.5  & 8.6  $\pm$ 9.3   & 0.698\\
-			& RGB + Depth        & 5.0 $\pm$ 4.8  & 4.3 $\pm$ 4.9  & 8.1  $\pm$ 8.3   & \textbf{0.737}\\
-			\hline
-		\end{tabular}
-	\end{center}
-\end{table}
-
-\newpage
-
-\section{基于链式存储结构的线性表实现}
-
-描述主页的结构,给出主页截图,描述主要设计思路等,请见图\ref{fig2-1}。描述主页的结构,给出主页截图,描述主要设计思路等。描述主页的结构,给出主页截图,描述主要设计思路等。描述主页的结构,给出主页截图,描述主要设计思路等。描述主页的结构,给出主页截图,描述主要设计思路等。描述主页的结构,给出主页截图,描述主要设计思路等。描述主页的结构,给出主页截图,描述主要设计思路等。
-
-\begin{figure}[htb]
-	\begin{center}
-		\includegraphics[scale=0.40]{images/2-1.jpg}
-		\caption{主页举例}
-		\label{fig2-1}
-	\end{center}
-\end{figure}
-
-\subsection{问题描述}
-
-说明此实验要解决的基本问题。大力出奇迹！！！参考文献无法显示怎么办？陈老师正在想办法解决\cite{STR2021Neurocom, AVS2021Neurocom}！我是参考文献。我是第二小节\cite{Mehrabian1974An}。我是第二小节\cite{Rezaei2014CVPR}。我是第二小节\cite{Ramnath2008IJCV}。
-
-\subsection{系统设计}
-
-包括整体系统结构设计和数据结构设计等。先在文件夹里的bib文件里添加新的参考文献,给每篇参考文献取一个索引的名字,然后再引用比如\cite{STR2021Neurocom}\cite{AVS2021Neurocom, Rezaei2014CVPR}。请注意书籍、期刊论文、专利等bib条目的格式是不一样的。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。
-
-\subsection{系统实现}
-
-主要说明各个主要函数的实现思想,复杂函数可辅助流程图进行说明,函数和系统实现的源代码放在附录中。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。
-
-\subsection{系统测试}
-
-主要说明针对各个函数正常和异常的测试用例及测试结果画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。
-
-\begin{figure}[htb] % here top bottom
-	\begin{center}
-		\includegraphics[scale=0.80]{images/1-1.pdf}
-		\caption{网页整体框架举例}
-		\label{fig4-1}
-	\end{center}
-\end{figure}
-
-\subsection{实验小结}
-
-\newpage
-
-\section{基于二叉链表的二叉树实现}
-
-给出分页面截图,描述主要设计思路等。给出分页面截图,描述主要设计思路等。给出分页面截图,描述主要设计思路等。给出分页面截图,描述主要设计思路等。
-
-\subsection{问题描述}
-
-说明此实验要解决的基本问题。大力出奇迹！！！参考文献无法显示怎么办？陈老师正在想办法解决\cite{STR2021Neurocom, AVS2021Neurocom}！我是参考文献。我是第二小节\cite{Mehrabian1974An}。我是第二小节\cite{Rezaei2014CVPR}。我是第二小节\cite{Ramnath2008IJCV}。
-
-\subsection{系统设计}
-
-包括整体系统结构设计和数据结构设计等。先在文件夹里的bib文件里添加新的参考文献,给每篇参考文献取一个索引的名字,然后再引用比如\cite{STR2021Neurocom}\cite{AVS2021Neurocom, Rezaei2014CVPR}。请注意书籍、期刊论文、专利等bib条目的格式是不一样的。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。
-
-\subsection{系统实现}
-
-主要说明各个主要函数的实现思想,复杂函数可辅助流程图进行说明,函数和系统实现的源代码放在附录中。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。
-
-\subsection{系统测试}
-
-主要说明针对各个函数正常和异常的测试用例及测试结果画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。
-
-\begin{figure}[htb] % here top bottom
-	\begin{center}
-		\includegraphics[scale=0.80]{images/1-1.pdf}
-		\caption{网页整体框架举例}
-		\label{fig3-1}
-	\end{center}
-\end{figure}
-
-\subsection{实验小结}
-
-如果实验报告中要用到算法伪代码,请参考算法\ref{alg:1},也可以参考算法\ref{alg:2}。如果实验报告中要用到算法伪代码,请参考算法\ref{alg:1},也可以参考算法\ref{alg:2}。如果实验报告中要用到算法伪代码,请参考算法\ref{alg:1},也可以参考算法\ref{alg:2}。如果实验报告中要用到算法伪代码,请参考算法\ref{alg:1},也可以参考算法\ref{alg:2}。
-
-\begin{shaded*}\begin{alg}{一个复杂算法}
-		\label{alg:1}
-		\begin{algorithmic}
-			\Input Two numbers $a$ and $b$
-			\Output The sum of $a$ and $b$
-			\Procedure{A-Plus-B}{$a, b$}
-			\If $a = 0$
-			\State \Return $b$
-			\EndIf
-			\State $res \gets 0$
-			\While{$b \neq 0$}
-			\State Increase $res$ by $1$
-			\State $b \gets b - 1$
-			\EndWhile
-			\State \Return $res$
-			\EndProcedure
-		\end{algorithmic}
-\end{alg}\end{shaded*}
-
-如果实验报告中要用到算法伪代码,请参考算法\ref{alg:1},也可以参考算法\ref{alg:2}。如果实验报告中要用到算法伪代码,请参考算法\ref{alg:1},也可以参考算法\ref{alg:2}。如果实验报告中要用到算法伪代码,请参考算法\ref{alg:1},也可以参考算法\ref{alg:2}。如果实验报告中要用到算法伪代码,请参考算法\ref{alg:1},也可以参考算法\ref{alg:2}。
-
-\begin{algorithm}[h] 
-	\caption{一个更复杂算法}
-	\begin{algorithmic}[1]
-		\State Initialization: $I_{xy}$, $z_{f}=Zeros(128, 128)$; 
-		\For{$0\leq n \textless N$}
-		\State $i=\lfloor x_n \rfloor+64$, $j=\lfloor y_n \rfloor + 64$
-		\If{$z_n<0$ and $|z_n|>|z_{f}(i,j)|$};
-		\State $z_{f}(i,j)=z_n$;
-		\EndIf
-		\State $I_{xy}(i,j)=z_{f}(i,j)$;
-		\EndFor 
-	\end{algorithmic}\label{alg:2}
-\end{algorithm}
+todo
 
 \newpage
 
 \section{基于邻接表的图实现}
 
-\subsection{问题描述}
+\subsection{实验目的}
 
-说明此实验要解决的基本问题。大力出奇迹！！！参考文献无法显示怎么办？陈老师正在想办法解决\cite{STR2021Neurocom, AVS2021Neurocom}！我是参考文献。我是第二小节\cite{Mehrabian1974An}。我是第二小节\cite{Rezaei2014CVPR}。我是第二小节\cite{Ramnath2008IJCV}。
+通过实验达到
+
+(1)加深对图的概念、基本运算的理解;
+
+(2)熟练掌握图的逻辑结构与物理结构的关系;
+
+(3)以邻接表作为物理结构,熟练掌握图基本运算的实现。
+
+\subsubsection{邻接表抽象数据类型}
+
+依据最小完备性和常用性相结合的原则,以函数形式定义了创建图、销毁图、查找顶点、获得顶点值和顶点赋值等13种基本运算,具体运算功能定义如下。
+
+(1)创建图
+
+CreateCraph(\&G,V,VR);
+
+----初始条件:V是图的顶点集,VR是图的关系集;
+
+----操作结果:按V和VR的定义构造图G。
+
+(2)销毁图:
+
+DestroyBiTree(T);
+
+----初始条件:图G已存在;
+
+----操作结果:销毁图G。
+
+(3)查找顶点
+
+LocateVex(G,u);
+
+----初始条件:图G存在,u和G中的顶点具有相同特征;
+
+----操作结果:若u在图G中存在,返回顶点u的位置信息,否则返回其它信息。
+
+(4)获得顶点值
+
+GetVex (G,v);
+
+----初始条件:图G存在,v是G中的某个顶点;
+
+----操作结果:返回v的值。
+
+(5)顶点赋值
+
+PutVex (G,v,value);
+
+----初始条件:图G存在,v是G中的某个顶点;
+
+----操作结果:对v赋值value。
+
+(6)获得第一邻接点
+
+FirstAdjVex(\&G, v);
+
+----初始条件:图G存在,v是G的一个顶点;
+
+----操作结果:返回v的第一个邻接顶点,如果v没有邻接顶点,返回“空”。
+
+(7)获得下一邻接点
+
+NextAdjVex(\&G, v, w);
+
+----初始条件:图G存在,v是G的一个顶点,w是v的邻接顶点;
+
+----操作结果:返回v的(相对于w)下一个邻接顶点,如果w是最后一个邻接顶点,返回“空”。
+
+(8)插入顶点
+
+InsertVex(\&G,v);
+
+----初始条件:图G存在,v和G中的顶点具有相同特征;
+
+----操作结果:在图G中增加新顶点v。
+
+(9)删除顶点
+
+DeleteVex(\&G,v);
+
+----初始条件:图G存在,v是G的一个顶点;
+
+----操作结果:在图G中删除顶点v和与v相关的弧。
+
+(10)插入弧
+
+InsertArc(\&G,v,w);
+
+----初始条件:图G存在,v、w是G的顶点;
+
+----操作结果:在图G中增加弧<v,w>,如果图G是无向图,还需要增加<w,v>。
+
+(11)删除弧
+
+DeleteArc(\&G,v,w);
+
+----初始条件:图G存在,v、w是G的顶点;
+
+----操作结果:在图G中删除弧<v,w>,如果图G是无向图,还需要删除<w,v>。
+
+(12)深度优先搜索遍历
+
+DFSTraverse(G,visit());
+
+----初始条件:图G存在;
+
+----操作结果:图G进行深度优先搜索遍历,依次对图中的每一个顶点使用函数visit访问一次,且仅访问一次。
+
+(13)广深度优先搜索遍历
+
+BFSTraverse(G,visit());
+
+----初始条件:图G存在;
+
+----操作结果:图G进行广度优先搜索遍历,依次对图中的每一个顶点使用函数visit访问一次,且仅访问一次。
+
+附加功能
+
+(1)距离小于k的顶点集合
+
+VerticesSetLessThank(G,V,K);
+
+----初始条件:图G存在;
+
+----操作结果:返回与顶点v距离小于k的顶点集合;
+
+(2)顶点间最短路径和长度
+
+ShortestPathLength(G,v,w); 
+
+初始条件:图G存在;
+
+操作结果:返回顶点v与顶点w的最短路径的长度;
+
+(3)图的连通分量
+
+ConnectedComponentsNums(G);
+
+初始条件:图G存在;
+
+操作结果:返回图G的所有连通分量的个数;
+
+\subsubsection{邻接表的文件形式管理}
+
+1.设计文件数据记录格式,以高效保存邻接表数据逻辑结构的完整信息;
+
+2.设计了线性表文件保存和加载操作的合理模式。附录B提供了文件存取的具体方法。
+
+\subsubsection{实现多个邻接表管理}
+
+在整个邻接表之外设计包装邻接表,将已经存在的所有邻接表用链式结构串起,对邻接表赋予独特ID标识,通过ID选择要进行操作的链表。
 
 \subsection{系统设计}
 
-包括整体系统结构设计和数据结构设计等。先在文件夹里的bib文件里添加新的参考文献,给每篇参考文献取一个索引的名字,然后再引用比如\cite{STR2021Neurocom}\cite{AVS2021Neurocom, Rezaei2014CVPR}。请注意书籍、期刊论文、专利等bib条目的格式是不一样的。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。
+\subsubsection{数据结构设计}
+
+1.邻接表的存储数据结构
+
+结构体定义如下：
+
+\begin{lstlisting}
+typedef struct
+{ //顶点类型定义
+  KeyType key;
+  char others[20];
+} VertexType;
+
+typedef struct ArcNode
+{ //表结点类型定义
+  int adjvex;              //顶点位置编号
+  struct ArcNode *nextarc; //下一个表结点指针
+} ArcNode;
+
+typedef struct VNode
+{ //头结点及其数组类型定义
+  VertexType data;   //顶点信息
+  ArcNode *firstarc; //指向第一条弧
+} VNode, AdjList[MAX_VERTEX_NUM];
+
+typedef struct
+{ //邻接表的类型定义
+  AdjList vertices;   //头结点数组
+  int vexnum, arcnum; //顶点数、弧数
+  GraphKind kind;     //图的类型
+} ALGraph;
+\end{lstlisting}
+
+2.多邻接表的存储数据结构：
+
+结构体定义如下：
+
+\begin{lstlisting}
+typedef struct
+{ //邻接表的集合类型定义
+  struct
+  {
+    char name[30];
+    ALGraph L;
+  } elem[10];
+  int length;
+} ALGraphs;
+\end{lstlisting}
+
+\subsubsection{演示系统设计}
+
+包括用户操作界面和功能调用两个部分。
+
+演示系统语言为英文,所有操作和提示语言均为中文。
+
+用户操作界面输出可选的邻接表操作,用户输入数字选择要进行的操作。系统提示用户输入参数。
+
+功能调用部分则将用户输入的有关信息传递给数据结构的操作函数进行调用,并对函数返回值进行处理判断输出相应提示信息。
 
 \subsection{系统实现}
 
-主要说明各个主要函数的实现思想,复杂函数可辅助流程图进行说明,函数和系统实现的源代码放在附录中。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。
+主要说明各个主要函数的实现思想,复杂函数可辅助流程图进行说明,函数和系统实现的源代码放在附录中。
+
+\subsubsection{邻接表基础运算算法实现}
+
+1.status CreateGraph(ALGraph \&G, VertexType V[], KeyType VR[][2]);
+
+\textbf{功能: }创建图
+
+\textbf{算法实现: }若G不存在,初始化图,用V创建顶点,用VR创建图的边,并遍历寻找顶点后用首插法加入邻接表。
+
+\textbf{时空效率: }时间复杂度为O(n),空间复杂度为O(1)。\\
+
+2.status DestroyGraph(ALGraph \&G);
+
+\textbf{功能: }销毁无向图,删除所有顶点和边。
+
+\textbf{算法实现: }遍历邻接图顶点数据,删除顶点的所有的边后删除顶点。把顶点数和边数设置为0。
+
+\textbf{时空效率: }时间复杂度为O(n),空间复杂度为O(1)。\\
+
+3.int LocateVex(ALGraph G, KeyType u);
+
+\textbf{功能: }寻找指定顶点在邻接表中位置。
+
+\textbf{算法实现: }遍历邻接表顶点,寻找到指定元素则返回其逻辑序号。
+
+\textbf{时空效率: }时间复杂度为O(n),空间复杂度为O(1)。\\
+
+4.status PutVex(ALGraph \&G, KeyType u, VertexType value);
+
+\textbf{功能: }将顶点值修改为value
+
+\textbf{算法实现: }遍历邻接表结点,寻找顶点值为u的结点,将value赋给此结点。
+
+\textbf{时空效率: }时间复杂度为O(n),空间复杂度为O(1)。\\
+
+5.int FirstAdjVex(ALGraph G, KeyType u);
+
+\textbf{功能: }寻找顶点u的第一邻接顶点位序
+
+\textbf{算法实现: }遍历邻接表结点,寻找顶点值为u的结点,返回其第一邻接顶点位序。
+
+\textbf{时空效率: }时间复杂度为O(n),空间复杂度为O(1)。\\
+
+int NextAdjVex(ALGraph G, KeyType v, KeyType w);
+
+\textbf{功能: }寻找顶点w在邻接表顶点v的邻接顶点中下一个邻接顶点位置。
+
+\textbf{算法实现: }遍历邻接表结点,寻找顶点值为u的结点,在其邻接顶点中寻找v,返回v的下一邻接顶点位序后返回OK。
+
+\textbf{时空效率: }时间复杂度为O(n),空间复杂度为O(1)。\\
+
+status InsertVex(ALGraph \&G, VertexType v);
+
+\textbf{功能: }插入顶点。
+
+\textbf{算法实现: }检查已有邻接表中是否存在与v的key相同的顶点,邻接表是否不存在或顶点数大于20,是则返回ERROR,否则在邻接表最后加入v顶点并把该位置的firstarc设置为0,邻接表顶点数加一后返回OK。
+
+\textbf{时空效率: }时间复杂度为O(n),空间复杂度为O(1)。\\
+
+status DeleteVex(ALGraph \&G, KeyType v);
+
+\textbf{功能: }删除顶点及相关的弧。
+
+\textbf{算法实现: }用LocateVex确定v位置并检查合法性,无误则遍历邻接表各顶点删除该顶点及其邻接边数据(每删除一条边则将邻接表总边数减1),将后续顶点前移。再遍历一次邻接表顶点,在每个邻接顶点内对边遍历,若值为v的位置序号则删除该边并将后续边向前移动一次,对边再遍历一次,若值大于v的位置序号则将值-1。将邻接表顶点数减1后返回OK;
+
+\textbf{时空效率: }时间复杂度为O($n^{2}$),空间复杂度为O(1)。\\
+
+status InsertArc(ALGraph \&G, KeyType v, KeyType w);
+
+status DeleteArc(ALGraph \&G, KeyType v, KeyType w);
+
+void DFS(ALGraph \&G, void (*visit)(VertexType), int *k, int i);
+
+status DFSTraverse(ALGraph \&G, void (*visit)(VertexType));
+
+status BFSTraverse(ALGraph \&G, void (*visit)(VertexType));
+
+附加功能:
+
+status VerticesSetLessThank(ALGraph G, KeyType v, int k);
+
+void VerticesSetLess(ALGraph G, ArcNode *p, int k, int *q, int a);
+
+int ShortestPathLength(ALGraph G, KeyType v, KeyType w);
+
+int ConnectedComponentsNums(ALGraph G);
+
+\subsubsection{文件存储算法实现}
+
+status SaveGraph(ALGraph G, char FileName[]);
+
+status LoadGraph(ALGraph \&G, char FileName[]);
+
+\subsubsection{多文件存储算法实现}
+
+status AddGraph(ALGraphs \&Graphs, char GraphName[], VertexType V[], KeyType VR[][2]);
+
+status RemoveGraph(ALGraphs \&Graphs, char GraphName[]);
+
+int LocateGraph(ALGraphs Graphs, char GraphName[]);
 
 \subsection{系统测试}
 
-主要说明针对各个函数正常和异常的测试用例及测试结果画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。画图说明网页的整体框架,进行简要的文字描述等。
+主要说明针对各个函数正常和异常的测试用例及测试结果
 
-\begin{figure}[htb] % here top bottom
-	\begin{center}
-		\includegraphics[scale=0.80]{images/1-1.pdf}
-		\caption{网页整体框架举例}
-		\label{fig5-1}
-	\end{center}
-\end{figure}
+\subsubsection{实验环境}
+
+\subsubsection{操作演示}
 
 \subsection{实验小结}
 

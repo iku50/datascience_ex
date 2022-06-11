@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2022.5.14)  3 JUN 2022 22:26
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2022.5.14)  11 JUN 2022 16:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1542,109 +1542,135 @@ slant=0.167;"
 
 
 ] [2] [3] [4]
-Underfull \hbox (badness 10000) in paragraph at lines 314--315
+Underfull \hbox (badness 10000) in paragraph at lines 316--317
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 322--323
+Underfull \hbox (badness 10000) in paragraph at lines 324--325
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 330--331
+Underfull \hbox (badness 10000) in paragraph at lines 332--333
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 338--339
+Underfull \hbox (badness 10000) in paragraph at lines 340--341
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 346--347
+Underfull \hbox (badness 10000) in paragraph at lines 348--349
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 354--355
+Underfull \hbox (badness 10000) in paragraph at lines 356--357
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 362--363
+Underfull \hbox (badness 10000) in paragraph at lines 364--365
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 370--371
+Underfull \hbox (badness 10000) in paragraph at lines 372--373
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 378--379
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 386--387
+Underfull \hbox (badness 10000) in paragraph at lines 380--381
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 394--395
+Underfull \hbox (badness 10000) in paragraph at lines 388--389
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 402--403
+Underfull \hbox (badness 10000) in paragraph at lines 396--397
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 412--413
+Underfull \hbox (badness 10000) in paragraph at lines 404--405
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 420--421
+Underfull \hbox (badness 10000) in paragraph at lines 414--415
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 422--423
 
  []
 
 [7]
+Underfull \hbox (badness 10000) in paragraph at lines 432--433
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 440--441
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 448--449
+
+ []
+
 File: images/1-1.png Graphic file (type bmp)
 <images/1-1.png>
- [8]
-File: images/1-2.png Graphic file (type bmp)
-<images/1-2.png>
-File: images/1-3.png Graphic file (type bmp)
-<images/1-3.png>
- [9] [10]
-File: images/2-1.jpg Graphic file (type bmp)
-<images/2-1.jpg>
- [11
+[8] [9] [10
 
-]
-File: images/1-1.pdf Graphic file (type pdf)
-<use images/1-1.pdf>
- [12] [13
+] [11] [12] [13]
+Underfull \hbox (badness 10000) in paragraph at lines 710--711
 
-]
-File: images/1-1.pdf Graphic file (type pdf)
-<use images/1-1.pdf>
- [14]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 599.
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 718--719
+
+ []
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 602.
+Underfull \hbox (badness 10000) in paragraph at lines 726--727
 
-[15] [16
+ []
 
-]
-File: images/1-1.pdf Graphic file (type pdf)
-<use images/1-1.pdf>
- [17] [18
+
+Underfull \hbox (badness 10000) in paragraph at lines 734--735
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 742--743
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 750--751
+
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 758--759
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 766--767
+
+ []
+
+[16] [17] [18
 
 ] [19] (./Experimental_Report.bbl
 
@@ -1655,12 +1681,12 @@ Package fontspec Warning: Font "FandolFang-Regular" does not contain requested
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 674--679
+Underfull \hbox (badness 10000) in paragraph at lines 844--849
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 680--688
+Underfull \hbox (badness 10000) in paragraph at lines 850--858
 
  []
 
@@ -1678,15 +1704,15 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.34248pt have occurred.
 
 Package rerunfilecheck Info: File `Experimental_Report.out' has not changed.
-(rerunfilecheck)             Checksum: 27EB98D395E973A792DF331FEA386AAD;5006.
+(rerunfilecheck)             Checksum: 91D0BE497EB4897BED4022FBDD8C24AE;5348.
  ) 
 Here is how much of TeX's memory you used:
- 43461 strings out of 476156
- 1034095 string characters out of 5814963
- 1629357 words of memory out of 5000000
- 63451 multiletter control sequences out of 15000+600000
- 486826 words of font info for 157 fonts, out of 8000000 for 9000
+ 43416 strings out of 476156
+ 1032877 string characters out of 5814963
+ 1641357 words of memory out of 5000000
+ 63414 multiletter control sequences out of 15000+600000
+ 486802 words of font info for 154 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 88i,12n,101p,1209b,1123s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 88i,12n,101p,1209b,1679s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on Experimental_Report.pdf (27 pages).
