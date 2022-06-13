@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2022.5.14)  11 JUN 2022 16:28
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2022.5.14)  13 JUN 2022 23:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1631,72 +1631,324 @@ File: images/1-1.png Graphic file (type bmp)
 [8] [9] [10
 
 ] [11] [12] [13]
-Underfull \hbox (badness 10000) in paragraph at lines 710--711
+Underfull \hbox (badness 10000) in paragraph at lines 709--710
 
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 718--719
+Underfull \hbox (badness 10000) in paragraph at lines 717--718
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 726--727
+Underfull \hbox (badness 10000) in paragraph at lines 725--726
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 734--735
+Underfull \hbox (badness 10000) in paragraph at lines 733--734
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 742--743
+Underfull \hbox (badness 10000) in paragraph at lines 741--742
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 750--751
+Underfull \hbox (badness 10000) in paragraph at lines 749--750
 
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 758--759
+Underfull \hbox (badness 10000) in paragraph at lines 757--758
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 766--767
+Underfull \hbox (badness 10000) in paragraph at lines 765--766
 
  []
 
-[16] [17] [18
 
-] [19] (./Experimental_Report.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 773--774
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 781--782
+
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 789--790
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 797--798
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 807--808
+
+ []
+
+File: images/2-1.png Graphic file (type bmp)
+<images/2-1.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 823--824
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 831--832
+
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 841--842
+
+ []
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 849--850
+
+ []
+
+
+Overfull \hbox (0.73892pt too wide) in paragraph at lines 853--854
+[]\TU/TimesNewRoman(0)/m/n/12.045 1.status AddGraph(ALGraphs &Graphs, char Grap
+hName[], VertexType V[], Key-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 859--860
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 867--868
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 875--876
+
+ []
+
+[19]
+File: images/2-2.png Graphic file (type bmp)
+<images/2-2.png>
+ [20] [21
+
+] [22] (./Experimental_Report.bbl
 
 Package fontspec Warning: Font "FandolFang-Regular" does not contain requested
 (fontspec)                Script "CJK".
 
-) [20
+) [23
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 844--849
-
+Overfull \hbox (254.99962pt too wide) in paragraph at lines 944--945
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 850--858
+Overfull \hbox (81.55003pt too wide) in paragraph at lines 945--946
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][] 
+ []
+
+[24
+
+] [25]
+Overfull \hbox (59.86884pt too wide) in paragraph at lines 1007--1008
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][] 
+ []
+
+LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/sl' in size <12.045> not 
+available
+(Font)              Font shape `TU/TimesNewRoman(0)/m/it' tried instead on inpu
+t line 1020.
+
+Overfull \hbox (233.31842pt too wide) in paragraph at lines 1026--1027
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][] 
+ []
+
+[26]
+Overfull \hbox (168.27483pt too wide) in paragraph at lines 1040--1041
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (110.4583pt too wide) in paragraph at lines 1053--1054
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (16.50644pt too wide) in paragraph at lines 1058--1059
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[27]
+Overfull \hbox (341.72441pt too wide) in paragraph at lines 1066--1067
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (9.27937pt too wide) in paragraph at lines 1075--1076
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][] 
+ []
+
+
+Overfull \hbox (464.58453pt too wide) in paragraph at lines 1082--1083
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[28]
+Overfull \hbox (500.71986pt too wide) in paragraph at lines 1092--1093
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (500.71986pt too wide) in paragraph at lines 1104--1105
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (493.4928pt too wide) in paragraph at lines 1119--1120
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+[29]
+Overfull \hbox (529.62813pt too wide) in paragraph at lines 1134--1135
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (320.04321pt too wide) in paragraph at lines 1143--1144
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][] 
+ []
+
+
+Overfull \hbox (9.27937pt too wide) in paragraph at lines 1148--1149
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
 
  []
 
-[21
+[30]
+Overfull \hbox (529.62813pt too wide) in paragraph at lines 1156--1157
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][] 
+ []
 
-] [22
 
-] [23
+Overfull \hbox (341.72441pt too wide) in paragraph at lines 1171--1172
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
 
-] [24
+
+Overfull \hbox (88.7771pt too wide) in paragraph at lines 1174--1175
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][] 
+ []
+
+
+Overfull \hbox (88.7771pt too wide) in paragraph at lines 1177--1178
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+
+ []
+
+[31]
+Overfull \hbox (161.04776pt too wide) in paragraph at lines 1190--1191
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][] 
+ []
+
+[32]
+Overfull \hbox (197.18309pt too wide) in paragraph at lines 1229--1230
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[33]
+Overfull \hbox (226.09135pt too wide) in paragraph at lines 1251--1252
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (45.4147pt too wide) in paragraph at lines 1263--1264
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][] 
+ []
+
+[34]
+Overfull \hbox (175.50189pt too wide) in paragraph at lines 1277--1278
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (103.23123pt too wide) in paragraph at lines 1283--1284
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (30.96057pt too wide) in paragraph at lines 1294--1295
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (59.86884pt too wide) in paragraph at lines 1297--1298
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (59.86884pt too wide) in paragraph at lines 1299--1300
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[35]
+Overfull \hbox (96.00417pt too wide) in paragraph at lines 1308--1309
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][] 
+ []
+
+
+Overfull \hbox (30.96057pt too wide) in paragraph at lines 1312--1313
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[36] [37
+
+] [38
+
+] [39
 
 ] (./Experimental_Report.aux)
 
@@ -1704,15 +1956,15 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.34248pt have occurred.
 
 Package rerunfilecheck Info: File `Experimental_Report.out' has not changed.
-(rerunfilecheck)             Checksum: 91D0BE497EB4897BED4022FBDD8C24AE;5348.
+(rerunfilecheck)             Checksum: 88DA40BEE3F546474ACFD5E05F7548AF;5540.
  ) 
 Here is how much of TeX's memory you used:
- 43416 strings out of 476156
- 1032877 string characters out of 5814963
- 1641357 words of memory out of 5000000
- 63414 multiletter control sequences out of 15000+600000
- 486802 words of font info for 154 fonts, out of 8000000 for 9000
+ 43620 strings out of 476156
+ 1037151 string characters out of 5814963
+ 1659357 words of memory out of 5000000
+ 63614 multiletter control sequences out of 15000+600000
+ 486810 words of font info for 155 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 88i,12n,101p,1209b,1679s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 88i,12n,101p,1209b,1683s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Experimental_Report.pdf (27 pages).
+Output written on Experimental_Report.pdf (42 pages).

@@ -24,19 +24,21 @@
 \contentsline {subsubsection}{\numberline {2.2.2}演示系统设计}{14}{subsubsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.3}系统实现}{14}{subsection.2.3}%
 \contentsline {subsubsection}{\numberline {2.3.1}邻接表基础运算算法实现}{14}{subsubsection.2.3.1}%
-\contentsline {subsubsection}{\numberline {2.3.2}文件存储算法实现}{16}{subsubsection.2.3.2}%
-\contentsline {subsubsection}{\numberline {2.3.3}多文件存储算法实现}{16}{subsubsection.2.3.3}%
-\contentsline {subsection}{\numberline {2.4}系统测试}{17}{subsection.2.4}%
-\contentsline {subsubsection}{\numberline {2.4.1}实验环境}{17}{subsubsection.2.4.1}%
-\contentsline {subsubsection}{\numberline {2.4.2}操作演示}{17}{subsubsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.5}实验小结}{17}{subsection.2.5}%
-\contentsline {section}{\numberline {3}课程的收获和建议}{18}{section.3}%
-\contentsline {subsection}{\numberline {3.1}基于顺序存储结构的线性表实现}{18}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}基于链式存储结构的线性表实现}{18}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}基于二叉链表的二叉树实现}{18}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}基于二叉链表的二叉树实现}{19}{subsection.3.4}%
-\contentsline {section}{参考文献}{20}{section*.2}%
-\contentsline {section}{附录A 基于顺序存储结构线性表实现的源程序}{21}{section*.3}%
-\contentsline {section}{附录B 基于链式存储结构线性表实现的源程序}{22}{section*.4}%
-\contentsline {section}{附录C 基于二叉链表二叉树实现的源程序}{23}{section*.5}%
-\contentsline {section}{附录D 基于邻接表图实现的源程序}{24}{section*.6}%
+\contentsline {subsubsection}{\numberline {2.3.2}文件存储算法实现}{18}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}多文件存储算法实现}{19}{subsubsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.4}系统测试}{19}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}实验环境}{19}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}操作演示}{20}{subsubsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.5}实验小结}{20}{subsection.2.5}%
+\contentsline {section}{\numberline {3}课程的收获和建议}{21}{section.3}%
+\contentsline {subsection}{\numberline {3.1}基于顺序存储结构的线性表实现}{21}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}基于链式存储结构的线性表实现}{21}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}基于二叉链表的二叉树实现}{21}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}基于二叉链表的二叉树实现}{22}{subsection.3.4}%
+\contentsline {section}{参考文献}{23}{section*.4}%
+\contentsline {section}{附录A 基于顺序存储结构线性表实现的源程序}{24}{section*.5}%
+\contentsline {subsection}{def.h}{24}{subsection*.6}%
+\contentsline {subsection}{function.h}{26}{subsection*.7}%
+\contentsline {section}{附录B 基于链式存储结构线性表实现的源程序}{37}{section*.8}%
+\contentsline {section}{附录C 基于二叉链表二叉树实现的源程序}{38}{section*.9}%
+\contentsline {section}{附录D 基于邻接表图实现的源程序}{39}{section*.10}%
