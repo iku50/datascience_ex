@@ -38,7 +38,8 @@
 \contentsline {section}{参考文献}{23}{section*.4}%
 \contentsline {section}{附录A 基于顺序存储结构线性表实现的源程序}{24}{section*.5}%
 \contentsline {subsection}{def.h}{24}{subsection*.6}%
-\contentsline {subsection}{function.h}{26}{subsection*.7}%
-\contentsline {section}{附录B 基于链式存储结构线性表实现的源程序}{37}{section*.8}%
-\contentsline {section}{附录C 基于二叉链表二叉树实现的源程序}{38}{section*.9}%
-\contentsline {section}{附录D 基于邻接表图实现的源程序}{39}{section*.10}%
+\contentsline {subsection}{function.h}{24}{subsection*.8}%
+\contentsline {subsection}{main.c++}{24}{subsection*.16}%
+\contentsline {section}{附录B 基于链式存储结构线性表实现的源程序}{41}{section*.25}%
+\contentsline {section}{附录C 基于二叉链表二叉树实现的源程序}{42}{section*.26}%
+\contentsline {section}{附录D 基于邻接表图实现的源程序}{43}{section*.27}%
