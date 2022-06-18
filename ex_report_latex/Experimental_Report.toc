@@ -13,33 +13,24 @@
 \contentsline {subsection}{\numberline {1.4}系统测试}{8}{subsection.1.4}%
 \contentsline {subsubsection}{\numberline {1.4.1}实验环境}{8}{subsubsection.1.4.1}%
 \contentsline {subsubsection}{\numberline {1.4.2}操作演示}{9}{subsubsection.1.4.2}%
-\contentsline {subsection}{\numberline {1.5}实验小结}{9}{subsection.1.5}%
-\contentsline {section}{\numberline {2}基于邻接表的图实现}{10}{section.2}%
-\contentsline {subsection}{\numberline {2.1}实验目的}{10}{subsection.2.1}%
-\contentsline {subsubsection}{\numberline {2.1.1}邻接表抽象数据类型}{10}{subsubsection.2.1.1}%
-\contentsline {subsubsection}{\numberline {2.1.2}邻接表的文件形式管理}{12}{subsubsection.2.1.2}%
-\contentsline {subsubsection}{\numberline {2.1.3}实现多个邻接表管理}{12}{subsubsection.2.1.3}%
-\contentsline {subsection}{\numberline {2.2}系统设计}{13}{subsection.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.1}数据结构设计}{13}{subsubsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2}演示系统设计}{14}{subsubsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.3}系统实现}{14}{subsection.2.3}%
-\contentsline {subsubsection}{\numberline {2.3.1}邻接表基础运算算法实现}{14}{subsubsection.2.3.1}%
-\contentsline {subsubsection}{\numberline {2.3.2}文件存储算法实现}{18}{subsubsection.2.3.2}%
-\contentsline {subsubsection}{\numberline {2.3.3}多文件存储算法实现}{19}{subsubsection.2.3.3}%
-\contentsline {subsection}{\numberline {2.4}系统测试}{19}{subsection.2.4}%
-\contentsline {subsubsection}{\numberline {2.4.1}实验环境}{19}{subsubsection.2.4.1}%
-\contentsline {subsubsection}{\numberline {2.4.2}操作演示}{20}{subsubsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.5}实验小结}{20}{subsection.2.5}%
-\contentsline {section}{\numberline {3}课程的收获和建议}{21}{section.3}%
-\contentsline {subsection}{\numberline {3.1}基于顺序存储结构的线性表实现}{21}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}基于链式存储结构的线性表实现}{21}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}基于二叉链表的二叉树实现}{21}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}基于二叉链表的二叉树实现}{22}{subsection.3.4}%
-\contentsline {section}{参考文献}{23}{section*.4}%
-\contentsline {section}{附录A 基于顺序存储结构线性表实现的源程序}{24}{section*.5}%
-\contentsline {subsection}{def.h}{24}{subsection*.6}%
-\contentsline {subsection}{function.h}{24}{subsection*.8}%
-\contentsline {subsection}{main.c++}{24}{subsection*.16}%
-\contentsline {section}{附录B 基于链式存储结构线性表实现的源程序}{41}{section*.25}%
-\contentsline {section}{附录C 基于二叉链表二叉树实现的源程序}{42}{section*.26}%
-\contentsline {section}{附录D 基于邻接表图实现的源程序}{43}{section*.27}%
+\contentsline {subsection}{\numberline {1.5}实验小结}{16}{subsection.1.5}%
+\contentsline {section}{\numberline {2}基于邻接表的图实现}{17}{section.2}%
+\contentsline {subsection}{\numberline {2.1}实验目的}{17}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}邻接表抽象数据类型}{17}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}邻接表的文件形式管理}{19}{subsubsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.3}实现多个邻接表管理}{19}{subsubsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.2}系统设计}{20}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}数据结构设计}{20}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}演示系统设计}{21}{subsubsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.3}系统实现}{21}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}邻接表基础运算算法实现}{21}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}文件存储算法实现}{25}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}多文件存储算法实现}{26}{subsubsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.4}系统测试}{26}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}实验环境}{26}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}操作演示}{27}{subsubsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.5}实验小结}{33}{subsection.2.5}%
+\contentsline {section}{\numberline {3}课程的收获和建议}{34}{section.3}%
+\contentsline {subsection}{\numberline {3.1}代码规范}{34}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}程序调试}{34}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}数据结构}{34}{subsection.3.3}%

@@ -463,7 +463,7 @@ main.c:演示系统实现
 
 \subsubsection{操作演示}
 
-\begin{figure}[htb]
+\begin{figure}[!htb]
 	\begin{center}
 		\includegraphics[scale=0.60]{images/1-1.png}
 		\caption{系统演示界面}
@@ -471,9 +471,429 @@ main.c:演示系统实现
 		\end{center}
 \end{figure}
 
+\textbf{基础功能测试：}
+
+在无线性表的情况下销毁线性表
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/1-2.png}
+		\caption{界面}
+		\label{fig1-2}
+		\end{center}
+\end{figure}
+
+分别对3到18进行相应操作,结果都为操作失败。
+
+在无线性表的情况下创建线性表
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/1-3.png}
+		\caption{界面}
+		\label{fig1-3}
+		\end{center}
+\end{figure}
+
+在有线性表的情况下创建线性表
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/1-5.png}
+		\caption{界面}
+		\label{fig1-4}
+		\end{center}
+\end{figure}
+
+在有线性表的情况下销毁线性表
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/1-4.png}
+		\caption{界面}
+		\label{fig1-5}
+		\end{center}
+\end{figure}
+
+操作1,2正常,且线性表各函数判断是否存在线性表的功能均正常
+
+上述操作后,再初始化线性表,操作4检测线性表是否为空
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/1-8.png}
+		\caption{界面}
+		\label{fig1-6}
+		\end{center}
+\end{figure}
+
+操作5检测线性表长度
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/1-9.png}
+		\caption{界面}
+		\label{fig1-7}
+		\end{center}
+\end{figure}
+
+操作12遍历线性表
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/1-10.png}
+		\caption{界面}
+		\label{fig1-8}
+		\end{center}
+\end{figure}
+
+
+操作10插入元素9在3(不存在)位置
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/1-6.png}
+		\caption{界面}
+		\label{fig1-9}
+		\end{center}
+\end{figure}
+
+操作10插入元素9在位置1
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/1-7.png}
+		\caption{界面}
+		\label{fig1-10}
+		\end{center}
+\end{figure}
+
+操作10插入元素正常
+
+再插入元素8,7,6在9后面,操作12遍历线性表
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/1-11.png}
+		\caption{界面}
+		\label{fig1-11}
+		\end{center}
+\end{figure}
+
+操作12遍历线性表正常
+
+操作4检测线性表是否为空
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/1-12.png}
+		\caption{界面}
+		\label{fig1-12}
+		\end{center}
+\end{figure}
+
+操作5检测线性表长度
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/1-13.png}
+		\caption{界面}
+		\label{fig1-13}
+		\end{center}
+\end{figure}
+
+操作4,5正常
+
+操作6获取线性表第2个元素(8)
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/1-14.png}
+		\caption{界面}
+		\label{fig1-14}
+		\end{center}
+\end{figure}
+
+操作6获取线性表第8个元素(不存在)
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/1-15.png}
+		\caption{界面}
+		\label{fig1-15}
+		\end{center}
+\end{figure}
+
+操作6正常
+
+操作7获取元素8位置(2)
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/1-16.png}
+		\caption{界面}
+		\label{fig1-16}
+		\end{center}
+\end{figure}
+
+操作7获取元素2位置(不存在)
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/1-17.png}
+		\caption{界面}
+		\label{fig1-17}
+		\end{center}
+\end{figure}
+
+操作7正常
+
+操作8获取元素6前驱元素(7)
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/1-18.png}
+		\caption{界面}
+		\label{fig1-18}
+		\end{center}
+\end{figure}
+
+操作8获取元素9前驱元素(不存在)
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/1-19.png}
+		\caption{界面}
+		\label{fig1-19}
+		\end{center}
+\end{figure}
+
+操作8正常
+
+操作9获取元素9后置元素(8)
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/1-20.png}
+		\caption{界面}
+		\label{fig1-20}
+		\end{center}
+\end{figure}
+
+操作9获取元素6后置元素(不存在)
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/1-21.png}
+		\caption{界面}
+		\label{fig1-21}
+		\end{center}
+\end{figure}
+
+操作11删除第三个元素(7)
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/1-22.png}
+		\caption{界面}
+		\label{fig1-22}
+		\end{center}
+\end{figure}
+
+遍历结果为
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/1-23.png}
+		\caption{界面}
+		\label{fig1-23}
+		\end{center}
+\end{figure}
+
+操作11删除第8个元素(不存在)
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/1-24.png}
+		\caption{界面}
+		\label{fig1-24}
+		\end{center}
+\end{figure}
+
+操作11正常
+
+操作13求最大连续子数组和
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/1-25.png}
+		\caption{界面}
+		\label{fig1-25}
+		\end{center}
+\end{figure}
+
+操作13正常
+
+操作15求和为23的子数组个数(1)
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/1-26.png}
+		\caption{界面}
+		\label{fig1-26}
+		\end{center}
+\end{figure}
+
+操作15正常
+
+操作16数组升序排列
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/1-27.png}
+		\caption{界面}
+		\label{fig1-27}
+		\end{center}
+\end{figure}
+
+操作12遍历结果
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/1-28.png}
+		\caption{界面}
+		\label{fig1-28}
+		\end{center}
+\end{figure}
+
+排序功能正常
+
+\textbf{文件存储功能测试：}
+
+将上述操作后的线性表保存到文件test.txt之中
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/1-29.png}
+		\caption{界面}
+		\label{fig1-29}
+		\end{center}
+\end{figure}
+
+打开文件,可以看到
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/1-30.png}
+		\caption{界面}
+		\label{fig1-30}
+		\end{center}
+\end{figure}
+
+清空线性表,将文件里的数据读取
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/1-31.png}
+		\caption{界面}
+		\label{fig1-31}
+		\end{center}
+\end{figure}
+
+操作12遍历线性表
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/1-32.png}
+		\caption{界面}
+		\label{fig1-32}
+		\end{center}
+\end{figure}
+
+文件存储功能正常
+
+\textbf{多线性表功能测试：}
+
+操作19添加名为aa的线性表,数据为1,2,3,4,5
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/1-33.png}
+		\caption{界面}
+		\label{fig1-33}
+		\end{center}
+\end{figure}
+
+再添加名为bb的线性表,数据为5,4,3,2,1
+
+操作21定位线性表aa
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/1-34.png}
+		\caption{界面}
+		\label{fig1-34}
+		\end{center}
+\end{figure}
+
+操作22打印所有线性表
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/1-35.png}
+		\caption{界面}
+		\label{fig1-35}
+		\end{center}
+\end{figure}
+
+操作20删除多线性表bb
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/1-36.png}
+		\caption{界面}
+		\label{fig1-36}
+		\end{center}
+\end{figure}
+
+操作22遍历多线性表
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/1-37.png}
+		\caption{界面}
+		\label{fig1-37}
+		\end{center}
+\end{figure}
+
+操作23从单线性表模式切换到对多线性表的aa表操作
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/1-38.png}
+		\caption{界面}
+		\label{fig1-38}
+		\end{center}
+\end{figure}
+
+操作12遍历线性表
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/1-39.png}
+		\caption{界面}
+		\label{fig1-39}
+		\end{center}
+\end{figure}
+
+可以看到已经正常切换,测试一下各项功能都正常。
+
+多线性表功能正常
+
 \subsection{实验小结}
 
-todo
+本次实验完成了一个拥有多项功能,具有可拓展性的线性表。
+加深了对线性表的概念、基本运算的理解,掌握了线性表的基本运算的实现。熟练了线性表的逻辑结构和物理结构之间的关系。
 
 \newpage
 
@@ -900,179 +1320,395 @@ main.c:演示系统实现
 	\end{center}
 \end{figure}
 
+\textbf{基础功能测试}
+
+在无无向图的情况下销毁无向图
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/2-3.png}
+		\caption{界面}
+		\label{fig2-3}
+		\end{center}
+\end{figure}
+
+分别对3到17行相应操作,结果都为操作失败。
+
+在无无向图的情况下创建无向图,数据为
+“5 线性表 8 集合 7 二叉树 6 无向图 -1 nil 5 6 6 7 8 7 -1 -1”
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/2-4.png}
+		\caption{界面}
+		\label{fig2-4}
+		\end{center}
+\end{figure}
+
+在有无向图的情况下创建无向图
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/2-5.png}
+		\caption{界面}
+		\label{fig2-5}
+		\end{center}
+\end{figure}
+
+在有无向图的情况下销毁无向图
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/2-6.png}
+		\caption{界面}
+		\label{fig2-6}
+		\end{center}
+\end{figure}
+
+操作1,2正常,且邻接表各函数判断是否存在邻接表的功能均正常
+
+上述操作后重新用上面的数据初始化邻接图
+
+操作11深度优先搜索遍历
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/2-10.png}
+		\caption{界面}
+		\label{fig2-7}
+		\end{center}
+\end{figure}
+
+操作12广度优先搜索遍历
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/2-11.png}
+		\caption{界面}
+		\label{fig2-8}
+		\end{center}
+\end{figure}
+
+操作3定位key为7的顶点(位置为2)
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/2-7.png}
+		\caption{界面}
+		\label{fig2-9}
+		\end{center}
+\end{figure}
+
+操作3定位key为10的顶点(不存在)
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/2-8.png}
+		\caption{界面}
+		\label{fig2-10}
+		\end{center}
+\end{figure}
+
+操作4更改key为7的值为“12 新值”
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/2-9.png}
+		\caption{界面}
+		\label{fig2-11}
+		\end{center}
+\end{figure}
+
+操作11遍历查看结果
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/2-12.png}
+		\caption{界面}
+		\label{fig2-12}
+		\end{center}
+\end{figure}
+
+操作5寻找关键字为6的第一邻接点(序号为2)
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/2-13.png}
+		\caption{界面}
+		\label{fig2-13}
+		\end{center}
+\end{figure}
+
+操作6寻找关键字为6的顶点的关键字为12的邻接点的下一个邻接点(序号为0)
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/2-14.png}
+		\caption{界面}
+		\label{fig2-14}
+		\end{center}
+\end{figure}
+
+操作8删除关键字为12的顶点
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/2-15.png}
+		\caption{界面}
+		\label{fig2-15}
+		\end{center}
+\end{figure}
+
+操作11遍历查看结果
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/2-16.png}
+		\caption{界面}
+		\label{fig2-16}
+		\end{center}
+\end{figure}
+
+操作7插入关键字为7,值为“二叉树”
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/2-17.png}
+		\caption{界面}
+		\label{fig2-17}
+		\end{center}
+\end{figure}
+
+操作9插入弧“5 7”
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/2-18.png}
+		\caption{界面}
+		\label{fig2-18}
+		\end{center}
+\end{figure}
+
+操作11遍历查看结果
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/2-19.png}
+		\caption{界面}
+		\label{fig2-19}
+		\end{center}
+\end{figure}
+
+操作10删除弧“5 7”
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/2-20.png}
+		\caption{界面}
+		\label{fig2-20}
+		\end{center}
+\end{figure}
+
+操作11遍历查看结果
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/2-21.png}
+		\caption{界面}
+		\label{fig2-21}
+		\end{center}
+\end{figure}
+
+操作13输出顶点6内距离2以下的节点子集
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/2-22.png}
+		\caption{界面}
+		\label{fig2-22}
+		\end{center}
+\end{figure}
+
+插入弧6-8,操作14输出5,8间最短路径长度
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/2-23.png}
+		\caption{界面}
+		\label{fig2-23}
+		\end{center}
+\end{figure}
+
+操作14输出7,8间最短路径长度
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/2-24.png}
+		\caption{界面}
+		\label{fig2-24}
+		\end{center}
+\end{figure}
+
+操作15获取图联通分量
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/2-25.png}
+		\caption{界面}
+		\label{fig2-25}
+		\end{center}
+\end{figure}
+
+基础功能全部正常
+
+\textbf{文件存储功能测试：}
+
+将上述操作后的邻接图保存到文件test.txt之中
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/2-26.png}
+		\caption{界面}
+		\label{fig2-26}
+		\end{center}
+\end{figure}
+
+打开文件,可以看到
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/2-27.png}
+		\caption{界面}
+		\label{fig2-27}
+		\end{center}
+\end{figure}
+
+销毁邻接图,将文件里的数据读取
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/2-28.png}
+		\caption{界面}
+		\label{fig2-28}
+		\end{center}
+\end{figure}
+
+操作11深度搜索邻接图
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/2-29.png}
+		\caption{界面}
+		\label{fig2-29}
+		\end{center}
+\end{figure}
+
+文件存储功能正常
+
+\textbf{多邻接表功能测试：}
+
+操作19添加名为aa的邻接表,数据为1 kkk 2 aaa -1 nil 1 2 -1 -1
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/2-30.png}
+		\caption{界面}
+		\label{fig2-30}
+		\end{center}
+\end{figure}
+
+再添加名为bb的邻接表,数据为1 kkk 2 aaa 3 bbb 4 ccc -1 nil 3 4 -1 -1
+
+操作22打印所有邻接表
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/2-31.png}
+		\caption{界面}
+		\label{fig2-31}
+		\end{center}
+\end{figure}
+
+操作21定位邻接表aa
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/2-32.png}
+		\caption{界面}
+		\label{fig2-32}
+		\end{center}
+\end{figure}
+
+操作20删除邻接表bb
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/2-33.png}
+		\caption{界面}
+		\label{fig2-33}
+		\end{center}
+\end{figure}
+
+操作22遍历多线性表
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/2-34.png}
+		\caption{界面}
+		\label{fig2-34}
+		\end{center}
+\end{figure}
+
+操作23从单邻接表模式切换到对多邻接表的aa表操作
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/2-35.png}
+		\caption{界面}
+		\label{fig2-35}
+		\end{center}
+\end{figure}
+
+操作11深度搜索邻接表
+
+\begin{figure}[!htb]
+	\begin{center}
+		\includegraphics[scale=0.60]{images/2-36.png}
+		\caption{界面}
+		\label{fig2-36}
+		\end{center}
+\end{figure}
+
+可以看到已经正常切换,测试一下各项功能都正常。
+
+多线性表功能正常
+
 \subsection{实验小结}
+
+通过此次实验,构建了一个基础且具有可拓展性的邻接表系统。
 
 \newpage
 
 \section{课程的收获和建议}
 
-描述通过学习该专题,有何收获,有何建议,如某专题可适当减少讲授时间、某专题可适当增加讲授内容和时间等。描述通过学习该专题,有何收获,有何建议,如某专题可适当减少讲授时间、某专题可适当增加讲授内容和时间等。描述通过学习该专题,有何收获,有何建议,如某专题可适当减少讲授时间、某专题可适当增加讲授内容和时间等。描述通过学习该专题,有何收获,有何建议,如某专题可适当减少讲授时间、某专题可适当增加讲授内容和时间等。
+通过这次实验,我学到了一些数据结构基本框架的构建,通过实践操作锻炼了自己通过编程解决问题的能力。更为重要的是,从实践中认识到了一些事物切实的重要性
 
-\subsection{基于顺序存储结构的线性表实现}
+\subsection{代码规范}
 
-描述通过学习计算机基础知识专题,有何收获,有何建议,如某专题可适当减少讲授时间、某专题可适当增加讲授内容和时间等。描述网页的设计和实现过程中遇到的问题及如何解决。描述网页的设计和实现过程中遇到的问题及如何解决。描述网页的设计和实现过程中遇到的问题及如何解决。描述网页的设计和实现过程中遇到的问题及如何解决。描述网页的设计和实现过程中遇到的问题及如何解决。描述网页的设计和实现过程中遇到的问题及如何解决。描述网页的设计和实现过程中遇到的问题及如何解决。描述网页的设计和实现过程中遇到的问题及如何解决。
+注释是及其重要的,因为没有注释的函数会极大增加哪怕是写了这个函数的我的理解时间,而格式风格上也应该从头到尾都一致。这样不仅利于美观,更利于之后统一的理解。命名规范上尽量用英文,拼音有时会难解其意。
 
-\subsection{基于链式存储结构的线性表实现}
+\subsection{程序调试}
 
-描述通过学习文档撰写工具LaTeX专题,有何收获,有何建议,如某专题可适当减少讲授时间、某专题可适当增加讲授内容和时间等。描述通过学习文档撰写工具LaTeX专题,有何收获,有何建议,如某专题可适当减少讲授时间、某专题可适当增加讲授内容和时间等。
+程序调试上,我收获了对断点调试更深刻的应用,用vscode中的调试断点查看日志信息,获取命中次数等操作,能让我更方便地找到错误的根源。
 
-\subsection{基于二叉链表的二叉树实现}
+\subsection{数据结构}
 
-描述通过学习编程工具Python专题,有何收获,有何建议,如某专题可适当减少讲授时间、某专题可适当增加讲授内容和时间等。描述通过学习编程工具Python专题,有何收获,有何建议,如某专题可适当减少讲授时间、某专题可适当增加讲授内容和时间等。
+实际上,通过编写程序和修改Debug,我收获了线性表,二叉树,邻接表等各个数据结构框架在计算机语言中的实际体现。并更新了这些数据结构在自己对其应用层面上的认知。
 
-\subsection{基于二叉链表的二叉树实现}
-
-描述通过学习计算机基础知识专题,有何收获,有何建议,如某专题可适当减少讲授时间、某专题可适当增加讲授内容和时间等。描述通过学习计算机基础知识专题,有何收获,有何建议,如某专题可适当减少讲授时间、某专题可适当增加讲授内容和时间等。
-
-
-\nocite{*} %% 作用是不对文献进行引用,但可以生成文献列表
+%\nocite{*} %% 作用是不对文献进行引用,但可以生成文献列表
 
 \bibliographystyle{Experimental_Report}
 \bibliography{Experimental_Report}
 \setcounter{secnumdepth}{0}
 \appendix
-
-\section{附录A 基于顺序存储结构线性表实现的源程序}
-
-\subsection{def.h}
-
-\begin{figure}[htb]
-	\begin{center}
-		\includegraphics[scale=0.30]{images/3-1.png}
-		\caption{def.h}
-		\label{fig3-1}
-	\end{center}
-\end{figure}
-
-\subsection{function.h}
-
-\begin{figure}[htb]
-	\begin{center}
-		\includegraphics[scale=0.30]{images/3-2.png}
-		\caption{function.h}
-		\label{fig3-2}
-	\end{center}
-\end{figure}
-
-\begin{figure}[htb]
-	\begin{center}
-		\includegraphics[scale=0.30]{images/3-3.png}
-		\caption{function.h}
-		\label{fig3-3}
-	\end{center}
-\end{figure}
-
-\begin{figure}[htb]
-	\begin{center}
-		\includegraphics[scale=0.30]{images/3-4.png}
-		\caption{function.h}
-		\label{fig3-4}
-	\end{center}
-\end{figure}
-
-\begin{figure}[htb]
-	\begin{center}
-		\includegraphics[scale=0.30]{images/3-5.png}
-		\caption{function.h}
-		\label{fig3-5}
-	\end{center}
-\end{figure}
-
-\begin{figure}[htb]
-	\begin{center}
-		\includegraphics[scale=0.30]{images/3-6.png}
-		\caption{function.h}
-		\label{fig3-6}
-	\end{center}
-\end{figure}
-
-\begin{figure}[htb]
-	\begin{center}
-		\includegraphics[scale=0.30]{images/3-7.png}
-		\caption{function.h}
-		\label{fig3-7}
-	\end{center}
-\end{figure}
-
-\begin{figure}[htb]
-	\begin{center}
-		\includegraphics[scale=0.30]{images/3-8.png}
-		\caption{function.h}
-		\label{fig3-8}
-	\end{center}
-\end{figure}
-
-\subsection{main.c++}
-
-\begin{figure}[htb]
-	\begin{center}
-		\includegraphics[scale=0.30]{images/3-9.png}
-		\caption{main.c++}
-		\label{fig3-9}
-	\end{center}
-\end{figure}
-
-\begin{figure}[htb]
-	\begin{center}
-		\includegraphics[scale=0.30]{images/3-10.png}
-		\caption{main.c++}
-		\label{fig3-10}
-	\end{center}
-\end{figure}
-
-\begin{figure}[htb]
-	\begin{center}
-		\includegraphics[scale=0.30]{images/3-11.png}
-		\caption{main.c++}
-		\label{fig3-11}
-	\end{center}
-\end{figure}
-
-\begin{figure}[htb]
-	\begin{center}
-		\includegraphics[scale=0.30]{images/3-12.png}
-		\caption{main.c++}
-		\label{fig3-12}
-	\end{center}
-\end{figure}
-
-\begin{figure}[htb]
-	\begin{center}
-		\includegraphics[scale=0.30]{images/3-13.png}
-		\caption{main.c++}
-		\label{fig3-13}
-	\end{center}
-\end{figure}
-
-\begin{figure}[htb]
-	\begin{center}
-		\includegraphics[scale=0.30]{images/3-14.png}
-		\caption{main.c++}
-		\label{fig3-14}
-	\end{center}
-\end{figure}
-
-\begin{figure}[htb]
-	\begin{center}
-		\includegraphics[scale=0.30]{images/3-15.png}
-		\caption{main.c++}
-		\label{fig3-15}
-	\end{center}
-\end{figure}
-
-\begin{figure}[htb]
-	\begin{center}
-		\includegraphics[scale=0.30]{images/3-16.png}
-		\caption{main.c++}
-		\label{fig3-16}
-	\end{center}
-\end{figure}
-
-\newpage
-\section{附录B 基于链式存储结构线性表实现的源程序}
-\newpage
-\section{附录C 基于二叉链表二叉树实现的源程序}
-\newpage
-\section{附录D 基于邻接表图实现的源程序}
-
 \end{document}
